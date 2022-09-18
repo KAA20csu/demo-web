@@ -19,12 +19,8 @@ public class Post implements Serializable {
     public Post() {
 
     }
-    public Post(Date creationDate, Long id, String text) {
-        this.id = id;
-        this.text = text;
-    }
 
-    public Post(long id, String text) {
+    public Post(String text) {
         this.id = id;
         this.text = text;
         this.creationDate = new Date().toString();

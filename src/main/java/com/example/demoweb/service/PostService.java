@@ -16,7 +16,7 @@ public class PostService {
     PostRepository postRepository;
 
     public void create(String text) {
-        Post post = new Post(new Date(), null, text);
+        Post post = new Post(text);
         postRepository.save(post);
     }
     public Iterable<Post> listAllPosts() {
